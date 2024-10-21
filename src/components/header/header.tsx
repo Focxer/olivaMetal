@@ -39,7 +39,7 @@ function Header() {
               target="_blank"
             >
               <Phone className="h-4 md:h-5" />
-              <span>(11) 91234-5678</span>
+              <span>(11)99523-9527</span>
             </a>
           </div>
         </section>
