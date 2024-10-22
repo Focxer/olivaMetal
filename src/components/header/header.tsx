@@ -1,21 +1,21 @@
 import { Instagram, Mail, Phone } from "lucide-react";
-import React from "react";
 import logo from "../../assets/logo.png";
+import { Navbar } from "./navbar";
 
-function Header() {
+export const Header = () => {
   return (
     /* O header precisa mudar quando o tamanho da tela for menor que 768 */
     /* Colocar menu hamburger */
-    
+
     /* O header precisa mudar quando o tamanho da tela for menor que 768 */
     /* Colocar menu hamburger */
-    
+
     /* O header precisa mudar quando o tamanho da tela for menor que 768 */
     /* Colocar menu hamburger */
-   
+
     /* O header precisa mudar quando o tamanho da tela for menor que 768 */
     /* Colocar menu hamburger */
-    
+
     /* O header precisa mudar quando o tamanho da tela for menor que 768 */
     /* Colocar menu hamburger */
 
@@ -70,23 +70,8 @@ function Header() {
         </div>
 
         {/* Navbar */}
-        <nav className="text-sm lg:text-lg flex gap-4 lg:gap-8 text-zinc-100 font-bold">
-          <span className="hover:text-zinc-400 hover:cursor-pointer transition-all">
-            Inicio
-          </span>
-          <span className="hover:text-zinc-400 hover:cursor-pointer transition-all">
-            Serviços
-          </span>
-          <span className="hover:text-zinc-400 hover:cursor-pointer transition-all">
-            Sobre nós
-          </span>
-          <span className="hover:text-zinc-400 hover:cursor-pointer transition-all">
-            Contato
-          </span>
-        </nav>
+        {/* <Navbar></Navbar> */}
       </div>
     </header>
   );
-}
-
-export default Header;
+};

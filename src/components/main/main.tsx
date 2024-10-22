@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Main() {
+export const Main = () => {
   return (
     <main className='md:w-2/3 w-full p-8 m-6'>
         <section>
@@ -57,5 +57,3 @@ function Main() {
       </main>
   )
 }
-
-export default Main

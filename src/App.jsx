@@ -1,14 +1,12 @@
+import { Header } from "./components/header/header";
+import { Main } from "./components/main/main";
 import "./index.css";
-import { Header } from "./components/header";
-import { Main } from "./components/main";
 
-function App() {
+export const App = () => {
   return (
     <>
       <Header></Header>
       <Main></Main>
     </>
   );
-}
-
-export default App;
+};
