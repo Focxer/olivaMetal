@@ -18,7 +18,7 @@ const NavBar = () => {
     <>
       {/* Switch */}
       <nav className="lg:hidden">
-        <div className="text-zinc-200 font-bold">
+        <div className="text-zinc-200 font-bold hover:cursor-pointer">
           <Menu onClick={menuToggle} />
         </div>
       </nav>
@@ -34,7 +34,7 @@ const NavBar = () => {
       {/* Navbar mobile */}
       <ul
         id="navBurger"
-        className="ease-in-out hidden lg:hidden transform -translate-y-full w-screen bg-zinc-900 bg-opacity-50 backdrop-blur-md absolute top-0 right-0 p-4 shadow-lg transition-transform duration-200"
+        className="ease-in-out hidden lg:hidden transform -translate-y-full w-screen bg-zinc-900 bg-opacity-50 backdrop-blur-md absolute top-0 right-0 p-4 pt-16 shadow-lg transition-transform duration-200"
       >
         <div className="flex justify-between mb-8">
           <div className="flex justify-center items-center">
@@ -45,7 +45,7 @@ const NavBar = () => {
             </div>
           </div>
           <button onClick={menuToggle}>
-            <X className="text-zinc-200 font-bold" />
+            <X className="text-zinc-200 font-bold hover:cursor-pointer hover:text-zinc-300 mr-4 mt-2" />
           </button>
         </div>
         <div className="flex flex-col gap-4">
