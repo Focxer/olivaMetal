@@ -4,9 +4,13 @@ import Logo from "../../../assets/logo.png";
 
 const menuToggle = () => {
   const menu = document.getElementById("navBurger");
-  menu?.classList.contains("hidden")
-    ? menu.classList.remove("hidden")
-    : menu?.classList.add("hidden");
+  if (menu?.classList.contains("hidden")) {
+    menu.classList.remove("hidden");
+    setTimeout(() => menu.classList.remove("-translate-y-full"), 10);
+  } else {
+    menu?.classList.add("-translate-y-full");
+    setTimeout(() => menu?.classList.add("hidden"), 200);
+  }
 };
 
 const NavBar = () => {
@@ -30,7 +34,7 @@ const NavBar = () => {
       {/* Navbar mobile */}
       <ul
         id="navBurger"
-        className="lg:hidden w-screen bg-zinc-900 bg-opacity-30 backdrop-blur-md absolute top-0 right-0 p-4 shadow-lg"
+        className="ease-in-out hidden lg:hidden transform -translate-y-full w-screen bg-zinc-900 bg-opacity-50 backdrop-blur-md absolute top-0 right-0 p-4 shadow-lg transition-transform duration-200"
       >
         <div className="flex justify-between mb-8">
           <div className="flex justify-center items-center">
