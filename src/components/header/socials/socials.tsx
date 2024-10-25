@@ -4,7 +4,7 @@ import SocialsItem from "./socials-item";
 const Socials = () => {
   return (
     <>
-      <div className="w-full flex flex-col sm:flex-row items-center justify-between">
+      <div className="w-full flex flex-col sm:flex-row items-center justify-between md:mx-4">
         {/* Left side */}
         <section className="flex gap-4 justify-start">
           <SocialsItem

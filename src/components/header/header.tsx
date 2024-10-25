@@ -10,7 +10,7 @@ export const Header = () => {
         <Socials />
       </div>
 
-      <div className="bg-zinc-700 w-screen flex justify-between py-2 px-8 lg:justify-around items-center sticky top-0">
+      <div className="bg-zinc-700 w-screen flex justify-between py-2 px-8 lg:justify-around items-center sticky top-0 z-50">
         {/* Left content */}
         <div className="flex justify-center items-center">
           <img
