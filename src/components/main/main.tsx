@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Main = () => {
+/* export const Main = () => {
   return (
     <main className='md:w-2/3 w-full p-8 m-6'>
         <section>
@@ -12,11 +12,15 @@ export const Main = () => {
                         fabricação de peças sob medida, e muito mais. Nosso objetivo é entregar qualidade e precisão
                         em cada projeto.
                     </p>
-                    <ul className=''>
-                        <li>Corte e dobra de metais</li>
-                        <li>Soldagem</li>
-                        <li>Fabricação de peças sob medida</li>
-                        <li>Consultoria técnica especializada</li>
+                    <ul className='p-5 justify-normal'>
+                        <li className=''>Corte e dobra de metais:</li>
+                            <p className='text-zinc-800'>asdasda</p>
+                        <li className=''>Soldagem:</li>
+                            <p className='text-zinc-800'></p>
+                        <li className=''>Fabricação de peças sob medida:</li>
+                            <p className='text-zinc-800'></p>
+                        <li className=''>Consultoria técnica especializada:</li>
+                            <p className='text-zinc-800'>asas</p>
                     </ul>
                 </div>
                 <div>
@@ -56,4 +60,4 @@ export const Main = () => {
         </div>
       </main>
   )
-}
+} */
