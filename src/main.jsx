@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import HomePage from "./pages/home";
 import ServicesPage from "./pages/services";
@@ -8,21 +8,21 @@ import AboutUsPage from "./pages/aboutUs";
 import ContactPage from "./pages/contact";
 
 export const domain = "/olivaMetal";
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: `${domain}/`,
+    path: `/`,
     element: <HomePage />,
   },
   {
-    path: `${domain}/services`,
+    path: `/services`,
     element: <ServicesPage />,
   },
   {
-    path: `${domain}/about-us`,
+    path: `/about-us`,
     element: <AboutUsPage />,
   },
   {
-    path: `${domain}/contact`,
+    path: `/contact`,
     element: <ContactPage />,
   },
 ]);
