@@ -6,7 +6,7 @@ type IBanner = {
 const Banner = (props: IBanner) => {
   return (
     <>
-        <section className="relative w-screen h-[300px] lg:h-[500px] flex items-center justify-center overflow-hidden mb-2">
+        <section className="relative w-screen h-[300px] lg:h-[500px] flex items-center justify-center overflow-hidden">
           <div className="h-full w-full absolute bg-gradient-to-r from-cyan-400 to-blue-500" />
           <div className="flex flex-col items-center justify-center w-2/3 lg:w-1/3 drop-shadow-lg">
             <h1 className="relative font-bold mb-4 text-2xl lg:text-5xl text-zinc-800">
