@@ -18,9 +18,9 @@ export const Header = () => {
             src={logo}
             alt="Logo"
           />
-          <div className="flex flex-col text-sm lg:text-xl text-zinc-400 font-semibold">
-            <span>Precisão e inovação em</span>
-            <span>cada detalhe</span>
+          <div className="flex flex-col text-sm lg:text-xl text-zinc-600">
+            <span className="font-semibold">Precisão e Inovação</span>
+            <span className="text-sm">em cada detalhe</span>
           </div>
         </div>
 

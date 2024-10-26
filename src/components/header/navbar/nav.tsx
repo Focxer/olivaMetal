@@ -39,9 +39,9 @@ const NavBar = () => {
         <div className="flex justify-between mb-8">
           <div className="flex justify-center items-center">
             <img src={Logo} alt="Oliva Metal" className="h-12 w-auto" />
-            <div className="flex flex-col text-zinc-200 font-semibold mr-8 text-sm">
-              <span>Precisão e inovação em</span>
-              <span>cada detalhe</span>
+            <div className="flex flex-col text-zinc-200 mr-8 text-sm">
+              <span className="font-semibold">Precisão e Inovação</span>
+              <span className="text-sm">em cada detalhe</span>
             </div>
           </div>
           <button onClick={menuToggle}>
