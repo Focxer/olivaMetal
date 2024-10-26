@@ -1,9 +1,9 @@
 import { Mail, MapPin, Phone, } from 'lucide-react';
 import React from 'react';
 
-export const Contato = () => {
+const Contact = () => {
   return (
-        <section className='m-2 flex'>
+        <section className='w-screen m-2 flex flex-wrap'>
             <div className='w-1/2 p-2 bg-zinc-200'>
                 <h2 className='text-blue-800'>Contato</h2>
                     <ul> 
@@ -28,4 +28,4 @@ export const Contato = () => {
   );
 };
 
-export default Contato;
+export default Contact;

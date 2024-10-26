@@ -1,4 +1,4 @@
-import { Contact } from "lucide-react";
+import Contact from "../components/contact/contato";
 import { Header } from "../components/header/header";
 import Maps from "../components/maps/maps";
 
