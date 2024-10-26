@@ -20,7 +20,7 @@ const ServicesItem = (props: IServicesItem) => {
       />
       <div
         id="target"
-        className="absolute flex flex-col items-center justify-center drop-shadow-md w-full h-full translate-y-48 transition-all duration-200 group-hover:translate-y-0"
+        className="absolute flex flex-col items-center justify-center drop-shadow-md w-full h-full md:translate-y-48 transition-all duration-200 group-hover:translate-y-0"
       >
         <div className="flex gap-2 items-center justify-center mb-2 py-2">
           <h1 className="text-zinc-200 text-sm lg:text-2xl">{props.title}</h1>
