@@ -1,14 +1,14 @@
-import Carousel from "../components/carousel/carousel";
+import Banner from "../components/banner/banner";
 import { Header } from "../components/header/header";
-import { Main } from "../components/main/main";
+import Services from "../components/services/services";
 import "../index.css";
 
 export const Home = () => {
   return (
-    <>
+    <div className="mb-24">
       <Header></Header>
-      <Carousel></Carousel>
-      <Main></Main>
-    </>
+      <Banner></Banner>
+      <Services></Services>
+    </div>
   );
 };

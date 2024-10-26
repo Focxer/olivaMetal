@@ -12,7 +12,7 @@ const SocialsItem = (props: ISocialsItem) => {
     <>
       <div>
         <a
-          className="flex gap-1 items-center justify-center text-zinc-200 text-sm align-middle"
+          className="flex gap-1 items-center justify-center text-zinc-600 text-sm align-middle"
           href={props.link}
           target={props.target}
         >

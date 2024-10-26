@@ -18,7 +18,7 @@ const NavBar = () => {
     <>
       {/* Switch */}
       <nav className="lg:hidden">
-        <div className="text-zinc-200 font-bold hover:cursor-pointer">
+        <div className="text-zinc-800 font-bold hover:cursor-pointer">
           <Menu onClick={menuToggle} />
         </div>
       </nav>
@@ -39,7 +39,7 @@ const NavBar = () => {
         <div className="flex justify-between mb-8">
           <div className="flex justify-center items-center">
             <img src={Logo} alt="Oliva Metal" className="h-12 w-auto" />
-            <div className="flex flex-col text-zinc-400 font-semibold mr-8 text-sm">
+            <div className="flex flex-col text-zinc-200 font-semibold mr-8 text-sm">
               <span>Precisão e inovação em</span>
               <span>cada detalhe</span>
             </div>
