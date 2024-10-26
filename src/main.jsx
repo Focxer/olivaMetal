@@ -7,21 +7,22 @@ import ServicesPage from "./pages/services";
 import AboutUsPage from "./pages/aboutUs";
 import ContactPage from "./pages/contact";
 
+export const domain = "/olivaMetal";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: `${domain}/`,
     element: <HomePage />,
   },
   {
-    path: "services",
+    path: `${domain}/services`,
     element: <ServicesPage />,
   },
   {
-    path: "about-us",
+    path: `${domain}/about-us`,
     element: <AboutUsPage />,
   },
   {
-    path: "contact",
+    path: `${domain}/contact`,
     element: <ContactPage />,
   },
 ]);

@@ -1,7 +1,7 @@
 import { Cog, Factory, Handshake, Home, Menu, X } from "lucide-react";
 import NavItem from "./nav-item";
-import New from "../../../assets/New.png";
 import Logo from "../logo/logo";
+import { domain } from "../../../main";
 
 const menuToggle = () => {
   const menu = document.getElementById("navBurger");
@@ -26,10 +26,22 @@ const NavBar = () => {
 
       {/* Navbar desktop */}
       <ul className="hidden lg:flex gap-8">
-        <NavItem value="Início" icon={<Home />} link="/"></NavItem>
-        <NavItem value="Serviços" icon={<Cog />} link="services"></NavItem>
-        <NavItem value="Sobre nós" icon={<Factory />} link="about-us"></NavItem>
-        <NavItem value="Contato" icon={<Handshake />} link="contact"></NavItem>
+        <NavItem value="Início" icon={<Home />} link={`${domain}/`}></NavItem>
+        <NavItem
+          value="Serviços"
+          icon={<Cog />}
+          link={`${domain}/services`}
+        ></NavItem>
+        <NavItem
+          value="Sobre nós"
+          icon={<Factory />}
+          link={`${domain}/about-us`}
+        ></NavItem>
+        <NavItem
+          value="Contato"
+          icon={<Handshake />}
+          link={`${domain}/contact`}
+        ></NavItem>
       </ul>
 
       {/* Navbar mobile */}
@@ -46,17 +58,21 @@ const NavBar = () => {
           </button>
         </div>
         <div className="flex flex-col gap-4">
-          <NavItem value="Início" icon={<Home />} link="/"></NavItem>
-          <NavItem value="Serviços" icon={<Cog />} link="services"></NavItem>
+          <NavItem value="Início" icon={<Home />} link={`${domain}/`}></NavItem>
+          <NavItem
+            value="Serviços"
+            icon={<Cog />}
+            link={`${domain}/services`}
+          ></NavItem>
           <NavItem
             value="Sobre nós"
             icon={<Factory />}
-            link="about-us"
+            link={`${domain}/about-us`}
           ></NavItem>
           <NavItem
             value="Contato"
             icon={<Handshake />}
-            link="contact"
+            link={`${domain}/contact`}
           ></NavItem>
         </div>
       </ul>
