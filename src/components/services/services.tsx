@@ -1,4 +1,7 @@
 import ServicesItem from "./services-item";
+import mig from "../../assets/services/mig.png";
+import fresa from "../../assets/services/fresa.png";
+import torno from "../../assets/services/torno.png";
 import Img1 from "../../assets/carousel/1.png";
 import Img2 from "../../assets/carousel/2.png";
 import Img3 from "../../assets/carousel/3.png";
@@ -12,47 +15,56 @@ const Services = () => {
         title="Serviços"
         sub="Técnicas de usinagem para garantir o seu resultado"
       ></Division>
-      <section className="flex w-full flex-wrap mb-8">
+      <section className="flex w-full flex-wrap mb-8 gap-2 px-2">
         <ServicesItem
           img={Img1}
-          title="Service 1"
-          sub="Lorem ipsum dolor sit amet, ipsum dolor sit amet"
+          title="Qualidade"
+          sub="Materiais de alto padrão."
         ></ServicesItem>
         <ServicesItem
           img={Img2}
-          title="Service 2"
-          sub="Lorem ipsum dolor sit amet, ipsum dolor sit amet"
-        ></ServicesItem>
-        <ServicesItem
-          img={Img3}
-          title="Service 3"
-          sub="Lorem ipsum dolor sit amet, ipsum dolor sit amet"
+          title="Eficiência"
+          sub="Rapidez com precisão."
         ></ServicesItem>
         <ServicesItem
           img={Img1}
-          title="Service 4"
-          sub="Lorem ipsum dolor sit amet, ipsum dolor sit amet"
+          title="Garantia"
+          sub="Confiabilidade assegurada."
+        ></ServicesItem>
+        <ServicesItem
+          img={Img3}
+          title="Comprometimento"
+          sub="Foco total no cliente."
         ></ServicesItem>
       </section>
-      <ServicesExplain
-        img={Img1}
-        direction=""
-        title="Example"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus magnam nobis corporis assumenda, odit non animi, adipisci obcaecati quod consectetur voluptates facilis modi provident voluptas. Libero voluptas natus sapiente!"
-      ></ServicesExplain>
-      <ServicesExplain
-        img={Img2}
-        direction="flex-row-reverse"
-        title="Example"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus magnam nobis corporis assumenda, odit non animi, adipisci obcaecati quod consectetur voluptates facilis modi provident voluptas. Libero voluptas natus sapiente!"
-        textDirection="text-right"
-      ></ServicesExplain>
-      <ServicesExplain
-        img={Img3}
-        direction=""
-        title="Example"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus magnam nobis corporis assumenda, odit non animi, adipisci obcaecati quod consectetur voluptates facilis modi provident voluptas. Libero voluptas natus sapiente!"
-      ></ServicesExplain>
+      <div className="init-left">
+        <ServicesExplain
+          img={mig}
+          shadow="drop-shadow-md"
+          direction=""
+          title="Solda MIG"
+          text="Serviço de soldagem de alta precisão para unir metais com resistência e acabamento de qualidade."
+        ></ServicesExplain>
+      </div>
+      <div className="init-right">
+        <ServicesExplain
+          img={fresa}
+          shadow="drop-shadow-md"
+          direction="flex-row-reverse"
+          title="Fresa"
+          text="Usinagem de peças com detalhes complexos e precisão milimétrica, garantindo encaixes perfeitos."
+          textDirection="text-right"
+        ></ServicesExplain>
+      </div>
+      <div className="init-left">
+        <ServicesExplain
+          img={torno}
+          shadow="drop-shadow-md"
+          direction=""
+          title="Torno"
+          text="Torneamento de peças cilíndricas para acabamentos finos e alta precisão em diâmetros variados."
+        ></ServicesExplain>
+      </div>
     </>
   );
 };

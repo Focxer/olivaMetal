@@ -1,6 +1,7 @@
 import { Cog, Factory, Handshake, Home, Menu, X } from "lucide-react";
 import NavItem from "./nav-item";
-import Logo from "../../../assets/logo.png";
+import New from "../../../assets/New.png";
+import Logo from "../logo/logo";
 
 const menuToggle = () => {
   const menu = document.getElementById("navBurger");
@@ -25,10 +26,10 @@ const NavBar = () => {
 
       {/* Navbar desktop */}
       <ul className="hidden lg:flex gap-8">
-        <NavItem value="Início" icon={<Home />} link=""></NavItem>
-        <NavItem value="Serviços" icon={<Cog />} link=""></NavItem>
-        <NavItem value="Sobre nós" icon={<Factory />} link=""></NavItem>
-        <NavItem value="Contato" icon={<Handshake />} link=""></NavItem>
+        <NavItem value="Início" icon={<Home />} link="/"></NavItem>
+        <NavItem value="Serviços" icon={<Cog />} link="services"></NavItem>
+        <NavItem value="Sobre nós" icon={<Factory />} link="about-us"></NavItem>
+        <NavItem value="Contato" icon={<Handshake />} link="contact"></NavItem>
       </ul>
 
       {/* Navbar mobile */}
@@ -37,22 +38,26 @@ const NavBar = () => {
         className="ease-in-out hidden lg:hidden transform -translate-y-full w-screen bg-zinc-900 bg-opacity-50 backdrop-blur-md fixed top-0 right-0 p-4 pt-12 sm:pt-10 shadow-lg transition-transform duration-200"
       >
         <div className="flex justify-between mb-8">
-          <div className="flex justify-center items-center">
-            <img src={Logo} alt="Oliva Metal" className="h-12 w-auto" />
-            <div className="flex flex-col text-zinc-200 mr-8 text-sm">
-              <span className="font-semibold">Precisão e Inovação</span>
-              <span className="text-sm">em cada detalhe</span>
-            </div>
+          <div className="flex justify-center items-center gap-2">
+            <Logo color="text-zinc-200"></Logo>
           </div>
           <button onClick={menuToggle}>
             <X className="text-zinc-200 font-bold hover:cursor-pointer hover:text-zinc-300 mr-4 mt-4 sm:mt-2" />
           </button>
         </div>
         <div className="flex flex-col gap-4">
-          <NavItem value="Início" icon={<Home />} link=""></NavItem>
-          <NavItem value="Serviços" icon={<Cog />} link=""></NavItem>
-          <NavItem value="Sobre nós" icon={<Factory />} link=""></NavItem>
-          <NavItem value="Contato" icon={<Handshake />} link=""></NavItem>
+          <NavItem value="Início" icon={<Home />} link="/"></NavItem>
+          <NavItem value="Serviços" icon={<Cog />} link="services"></NavItem>
+          <NavItem
+            value="Sobre nós"
+            icon={<Factory />}
+            link="about-us"
+          ></NavItem>
+          <NavItem
+            value="Contato"
+            icon={<Handshake />}
+            link="contact"
+          ></NavItem>
         </div>
       </ul>
     </>

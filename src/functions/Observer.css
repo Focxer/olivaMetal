@@ -1,0 +1,37 @@
+/* From Left */
+.init-left{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    transform: translate(-5%, 0%);
+}
+
+.init-left-off{
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+
+
+/* From Right */
+.init-right{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    transform: translate(5%, 0%);
+}
+
+.init-right-off{
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+
+
+/* From Bottom */
+.init-bottom{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    transform: scale(.95) translate(0%, 5%);
+}
+
+.init-bottom-off{
+    opacity: 1;
+    transform: scale(1) translate(0%, 0%);
+}

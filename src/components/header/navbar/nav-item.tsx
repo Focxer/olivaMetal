@@ -12,7 +12,7 @@ const NavItem = (props: INavItem) => {
     <>
       <li className="text-zinc-200 lg:text-zinc-600 flex items-center justify-center border-t-2 lg:border-0 border-zinc-400">
         <a
-          href={props.link}
+          href={`${props.link}`}
           target={props.target}
           className="flex items-center justify-center hover:text-zinc-500 transition-all hover:cursor-pointer gap-1 align-middle mt-4"
         >
