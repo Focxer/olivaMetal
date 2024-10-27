@@ -5,6 +5,7 @@ import Services from "../components/services/services";
 import AboutUs from "../components/aboutUs/aboutUs";
 import Observer from "../functions/Observer";
 import "../functions/Observer.css";
+import Contact from "../components/contact/contato";
 
 export const HomePage = () => {
   Observer();
@@ -14,6 +15,7 @@ export const HomePage = () => {
       <Banner></Banner>
       <Services></Services>
       <Maps></Maps>
+      <Contact></Contact>
       <AboutUs></AboutUs>
     </div>
   );

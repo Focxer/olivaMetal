@@ -8,7 +8,7 @@ type IBanner = {
 const Banner = (props: IBanner) => {
   return (
     <>
-      <section className="relative w-screen h-[300px] lg:h-[500px] flex items-center justify-center overflow-hidden p-4">
+      <section className="relative w-screen h-[300px] lg:h-[500px] flex items-center justify-center overflow-hidden p-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl">
         {/* Background color */}
         <div className="h-full w-full absolute bg-gradient-to-r from-zinc-100 to-blue-200" />
         <div className="flex flex-col md:flex-row items-center justify-center w-screen drop-shadow-lg gap-4 px-4">

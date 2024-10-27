@@ -12,7 +12,7 @@ const ServicesExplain = (props: IServicesExplain) => {
   return (
     <section className="w-full flex items-center justify-center px-2">
       <div
-        className={`w-full lg:w-2/3 flex ${props.direction} gap-4 md:gap-8 justify-center items-center`}
+        className={`w-full lg:w-2/3 flex ${props.direction} gap-4 md:gap-8 justify-center items-center transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
       >
         <div className="flex w-1/2">
           <img
