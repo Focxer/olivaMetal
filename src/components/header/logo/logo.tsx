@@ -10,7 +10,7 @@ const Logo = (props: ILogo) => {
   return (
     <>
       <HashLink to="/">
-        <div className="flex justify-center items-center gap-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="flex justify-center items-center gap-2">
           <img
             className="h-12 w-auto max-h-[100px] drop-shadow-lg"
             src={New}

@@ -15,7 +15,7 @@ const Services = () => {
         title="Serviços"
         sub="Técnicas de usinagem para garantir o seu resultado"
       ></Division>
-      <section className="flex w-full flex-wrap mb-8 gap-2 px-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+      <section className="flex w-full flex-wrap mb-8 gap-2 px-2">
         <ServicesItem
           img={Img1}
           title="Qualidade"

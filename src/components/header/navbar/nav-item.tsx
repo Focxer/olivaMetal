@@ -15,7 +15,7 @@ const NavItem = (props: INavItem) => {
         <HashLink
           to={`${props.link}`}
           target={props.target}
-          className="flex items-center justify-center hover:text-zinc-500 transition-all hover:cursor-pointer gap-1 align-middle mt-4 rounded-lg duration-300 hover:scale-105 hover:shadow-2xl"
+          className="flex items-center justify-center hover:text-zinc-500 transition-all hover:cursor-pointer gap-1 align-middle mt-4"
         >
           <span className="w-4 h-4 flex items-center justify-center">
             {props.icon}

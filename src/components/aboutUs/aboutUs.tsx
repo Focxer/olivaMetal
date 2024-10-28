@@ -39,7 +39,7 @@ export const AboutUs = () => {
 
           
           <div className="md:w-1/2 px-6">
-            <img className="rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            <img className=""
             src={Img}
             alt="Oliva Metal"/>
           </div>
