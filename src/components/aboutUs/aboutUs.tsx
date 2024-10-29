@@ -4,10 +4,10 @@ import Img from "../../assets/logo.png";
 
 export const AboutUs = () => {
   return (
-    <>
+    <div className="w-screen">
     <Division title="Oliva Metal" sub="Conheça um pouco mais sobre nós"></Division>
       <section className="bg-gray-200 py-12">
-        <div className="container mx-auto px-6">
+        <div className="px-6">
           <h2 className="text-4xl font-bold text-zinc-800">Sobre Nós</h2>
           <p className="mt-4 text-zinc-600">
             Conheça mais sobre nossa empresa, nossa missão e os valores que nos
@@ -38,7 +38,7 @@ export const AboutUs = () => {
           </div>
 
           
-          <div className="md:w-1/2 px-6">
+          <div className="px-6">
             <img className=""
             src={Img}
             alt="Oliva Metal"/>
@@ -57,7 +57,7 @@ export const AboutUs = () => {
 
 
       </section>
-    </>
+    </div>
   );
 };
 

@@ -17,7 +17,7 @@ const StarRating: React.FC<StarRatingProps> = ({ totalStars = 5, onRatingChange 
   };
 
   return (
-    <div>
+    <div className='w-full'>
       {Array.from({ length: totalStars }, (_, index) => {
         const starValue = index + 1;
         return (

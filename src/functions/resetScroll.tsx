@@ -7,6 +7,7 @@ const resetScroll = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+  return;
 };
 
 export default resetScroll;

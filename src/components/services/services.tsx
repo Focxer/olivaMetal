@@ -15,7 +15,7 @@ const Services = () => {
         title="Serviços"
         sub="Técnicas de usinagem para garantir o seu resultado"
       ></Division>
-      <section className="flex w-full flex-wrap mb-8 gap-2 px-2">
+      <section className="flex flex-wrap mb-8 gap-4 px-4">
         <ServicesItem
           img={Img1}
           title="Qualidade"
@@ -37,7 +37,7 @@ const Services = () => {
           sub="Foco total no cliente."
         ></ServicesItem>
       </section>
-      <div className="init-left">
+      {/* <div className="init-left">
         <ServicesExplain
           img={mig}
           shadow="drop-shadow-md"
@@ -64,7 +64,7 @@ const Services = () => {
           title="Torno"
           text="Torneamento de peças cilíndricas para acabamentos finos e alta precisão em diâmetros variados."
         ></ServicesExplain>
-      </div>
+      </div> */}
     </>
   );
 };

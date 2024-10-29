@@ -18,7 +18,6 @@ export const HomePage = () => {
       <Header></Header>
       <Banner></Banner>
       <Services></Services>
-      <Maps></Maps>
       <Customers></Customers>
       <div className="mb-8">
         <Maps></Maps>
