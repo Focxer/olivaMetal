@@ -25,7 +25,7 @@ const ServicesExplain = (props: IServicesExplain) => {
           className={`text-zinc-600 w-1/2 max-h-52 flex flex-col gap-4 drop-shadow-md ${props.textDirection}`}
         >
           <h1 className="text-xl lg:text-5xl font-semibold ">{props.title}</h1>
-          <span className="text-xs sm:text-lg h-28 lg:h-auto overflow-hidden text-ellipsis whitespace-normal">
+          <span className="text-xs sm:text-lg h-28 lg:h-auto text-ellipsis whitespace-pre-wrap">
             {props.text}
           </span>
         </div>
