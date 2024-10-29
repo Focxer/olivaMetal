@@ -1,26 +1,27 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-import React from "react";
-
+import ContactItem from "./contact-item";
+import { customerAddress, customerEmail, customerPhone } from "../../customerVariables";
 const Contact = () => {
   return (
-    <section className="p-6 w-screen flex px-4 overflow-hidden gap-2">
-      <div className="w-1/2 p-2 bg-zinc-200 border-r-2 border-zinc-400">
-        <h2 className="text-blue-800">Contato</h2>
+    <section className="">
+      <div className="">
+        <h2 className="">Contato</h2>
         <ul>
-          <Mail></Mail>
-          <li>Teste@gmail.com</li>
-          <Phone></Phone>
-          <li>Celular: (11) 94002-8922</li>
-          <MapPin></MapPin>
-          <li>Endereço: R.Exemplo, 1234 - SBC</li>
+          <ContactItem icon={<Mail />} text={customerEmail}></ContactItem>
+          <ContactItem icon={<Phone />} text={customerPhone}></ContactItem>
+          <ContactItem icon={<MapPin />} text={customerAddress}></ContactItem>
         </ul>
       </div>
 
-      <div className="w-1/2 bg-zinc-200">
-        <h2 className="text-blue-800">Deixe sua mensagem</h2>
-        <form className="flex flex-col" action="https://formsubmit.co/maylonbento0107@gmail.com" method="post">
+      <div className="">
+        <h2 className="">Deixe sua mensagem</h2>
+        <form
+          className=""
+          action="https://formsubmit.co/maylonbento0107@gmail.com"
+          method="post"
+        >
           <input
-            className="p-2 sticky top-0"
+            className=""
             type="text"
             id="nome"
             placeholder="Seu nome"
@@ -28,7 +29,7 @@ const Contact = () => {
           />{" "}
           <br />
           <input
-            className="p-2 sticky top-0"
+            className=""
             type="email"
             id="email"
             placeholder="Seu email"
@@ -36,7 +37,7 @@ const Contact = () => {
           />{" "}
           <br />
           <textarea
-            className="p-2 sticky top-0"
+            className=""
             id="mensagem"
             cols={30}
             rows={5}

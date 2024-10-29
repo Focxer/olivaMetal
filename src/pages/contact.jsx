@@ -1,4 +1,4 @@
-import Contact from "../components/contact/contato";
+import Contact from "../components/contact/contact";
 import { Header } from "../components/header/header";
 import Maps from "../components/maps/maps";
 
