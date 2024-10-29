@@ -6,6 +6,7 @@ import AboutUs from "../components/aboutUs/aboutUs";
 import Observer from "../functions/Observer";
 import "../functions/Observer.css";
 import Contact from "../components/contact/contact";
+import Customers from "../components/customers/customers";
 
 export const HomePage = () => {
   Observer();
@@ -15,6 +16,7 @@ export const HomePage = () => {
       <Banner></Banner>
       <Services></Services>
       <Maps></Maps>
+      <Customers></Customers>
       <Contact></Contact>
       <AboutUs></AboutUs>
     </div>

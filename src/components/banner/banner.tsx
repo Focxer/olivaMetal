@@ -8,10 +8,10 @@ type IBanner = {
 const Banner = (props: IBanner) => {
   return (
     <>
-      <section className="relative w-full h-[300px] lg:h-[500px] flex items-center justify-center overflow-hidden p-4">
+      <section className="relative w-screen h-[300px] lg:h-[500px] flex items-center justify-center overflow-hidden p-4">
         {/* Background color */}
         <div className="h-full w-full absolute bg-gradient-to-r from-zinc-100 to-blue-200" />
-        <div className="flex flex-col md:flex-row items-center justify-center w-full drop-shadow-lg gap-4 px-4">
+        <div className="flex flex-col md:flex-row items-center justify-center w-screen drop-shadow-lg gap-4 px-4">
           <img
             className="drop-shadow-2xl h-20 md:h-32 lg:h-52"
             src={Img}
