@@ -11,7 +11,7 @@ const ServicesItem = (props: IServicesItem) => {
   return (
     <div
       id="main"
-      className="relative flex flex-col items-center justify-center drop-shadow-md transition-all duration-200 group lg:h-96 lg:w-96 w-32 h-32 flex-grow overflow-hidden"
+      className="relative flex flex-col items-center justify-center drop-shadow-md transition-all duration-200 group md:h-80 md:w-80 lg:h-96 lg:w-96 w-32 h-32 flex-grow overflow-hidden"
     >
       <img
         src={props.img}

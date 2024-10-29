@@ -6,7 +6,7 @@ function Customers() {
   return (
     <div className="w-screen">
       <Division title="Oliva Metal" sub="Custumers"></Division>
-      <div className="flex justify-center items-center gap-8">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-2 lg:gap-8 px-4">
         <CustomersItem
           img={img}
           name="Cliente 1"

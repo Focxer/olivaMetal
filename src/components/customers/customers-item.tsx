@@ -16,7 +16,7 @@ const CustomersItem = (props: ICostumersItem) => {
         alt={props.alt}
       />
       <h1 className="font-semibold">{props.name}</h1>
-      <span>{props.description}</span>
+      <span className="text-sm">{props.description}</span>
       <StarRating></StarRating>
     </div>
   );

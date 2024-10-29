@@ -14,7 +14,7 @@ export const HomePage = () => {
   Observer();
   resetScroll();
   return (
-    <div className="mb-24">
+    <>
       <Header></Header>
       <Banner></Banner>
       <Services></Services>
@@ -25,7 +25,7 @@ export const HomePage = () => {
       <Contact></Contact>
       <AboutUs></AboutUs>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 
