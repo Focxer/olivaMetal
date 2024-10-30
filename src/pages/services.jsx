@@ -1,4 +1,6 @@
+import Contact from "../components/contact/contact";
 import Footer from "../components/footer/footer";
+import Gallery from "../components/gallery/gallery";
 import { Header } from "../components/header/header";
 import Services from "../components/services/services";
 import WhatsApp from "../components/whatsapp/whatsapp";
@@ -11,7 +13,11 @@ export const ServicesPage = () => {
   return (
     <>
       <Header></Header>
+      <Gallery></Gallery>
       <Services></Services>
+      <div className="mt-12 -mb-24">
+        <Contact></Contact>
+      </div>
       <Footer></Footer>
       <WhatsApp></WhatsApp>
     </>

@@ -1,10 +1,9 @@
-import Whatsapp from "../../assets/whatsapp.png";
 import { Globals } from "../../globals";
 
 const WhatsApp = () => {
   return (
     <a
-      className="fixed right-12 md:right-16 lg:right-24 xl:18 bottom-24"
+      className="init-right fixed right-4 md:right-8 lg:right-8 xl:18 bottom-24"
       target="_blank"
       href={`https://wa.me/55${Globals.customer.phone.replaceAll(
         /[()-]/g,
@@ -16,7 +15,7 @@ const WhatsApp = () => {
           Iniciar conversa...
         </span>
         <img
-          src={Whatsapp}
+          src={Globals.img.whatsapp}
           alt="whatsappIcon"
           className="rounded-full max-h-12 max-w-12 aspect-square drop-shadow-lg hover:scale-105 duration-200 transition-all cursor-pointer"
         />

@@ -1,6 +1,6 @@
+import { Globals } from "../../globals";
 import Division from "../division/division";
 import CustomersItem from "./customers-item";
-import img from "../../assets/customers/customer.jpg";
 
 function Customers() {
   return (
@@ -8,21 +8,21 @@ function Customers() {
       <Division title="Avaliações" sub="Nossos clientes"></Division>
       <div className="flex flex-col md:flex-row justify-center items-center gap-2 lg:gap-8 px-4">
         <CustomersItem
-          img={img}
+          img={Globals.img.customer1}
           name="Cliente 1"
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem incidunt magni, cumque blanditiis dignissimos rem id libero autem quos maxime distinctio perferendis nesciunt placeat provident, mollitia et in laboriosam architecto? "
+          description="Fiquei impressionado com a precisão e o acabamento das peças usinadas. Profissionais competentes e prazos cumpridos!"
           initialRating={5}
         ></CustomersItem>
         <CustomersItem
-          img={img}
+          img={Globals.img.customer2}
           name="Cliente 2"
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem incidunt magni, cumque blanditiis dignissimos rem id libero autem quos maxime distinctio perferendis nesciunt placeat provident, mollitia et in laboriosam architecto?"
+          description="A equipe da Oliva Metal mostrou total domínio das máquinas e entregou exatamente o que pedi, com ótimo acabamento."
           initialRating={5}
         ></CustomersItem>
         <CustomersItem
-          img={img}
+          img={Globals.img.customer3}
           name="Cliente 3"
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem incidunt magni, cumque blanditiis dignissimos rem id libero autem quos maxime distinctio perferendis nesciunt placeat provident, mollitia et in laboriosam architecto?"
+          description="Ótima experiência! Peças feitas com precisão, e os equipamentos de solda e usinagem são modernos. Recomendo!"
           initialRating={4}
         ></CustomersItem>
       </div>
