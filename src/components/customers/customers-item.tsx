@@ -5,7 +5,7 @@ type ICostumersItem = {
   alt?: string;
   name: string;
   description: string;
-  initialRating?:string
+  initialRating:number;
 };
 
 const CustomersItem = (props: ICostumersItem) => {
@@ -18,7 +18,7 @@ const CustomersItem = (props: ICostumersItem) => {
       />
       <h1 className="font-semibold">{props.name}</h1>
       <span>{props.description}</span>
-      <StarRating initialRating={2}></StarRating>
+      <StarRating initialRating={props.initialRating}></StarRating>
     </div>
   );
 };

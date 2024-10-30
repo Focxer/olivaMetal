@@ -28,7 +28,7 @@ export const AboutUs = () => {
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div className="bg-blue-200 rounded-lg shadow-lg p-6 text-center">
               <div className="text-4xl text-blue-500 mb-4">
                 
                 <i className="fas fa-user-friends"></i>
@@ -38,7 +38,7 @@ export const AboutUs = () => {
             </div>
             
             
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div className="bg-blue-200 rounded-lg shadow-lg p-6 text-center">
               <div className="text-4xl text-green-500 mb-4">
                 <i className="fas fa-lightbulb"></i>
               </div>
@@ -47,7 +47,7 @@ export const AboutUs = () => {
             </div>
             
             
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div className="bg-blue-200 rounded-lg shadow-lg p-6 text-center">
               <div className="text-4xl text-red-500 mb-4">
                 <i className="fas fa-thumbs-up"></i>
               </div>

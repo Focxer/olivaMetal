@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface StarRatingProps {
   totalStars?: number;  // Número total de estrelas (default: 5)
-  initialRating?: number;  // Avaliação inicial passada como prop
+  initialRating: number;  // Avaliação inicial passada como prop (obrigatório)
 }
 
-const StarRating: React.FC<StarRatingProps> = ({ totalStars = 5, initialRating = 0 }) => {
-  const [rating] = useState<number>(initialRating);  // Avaliação é apenas para visualização
-  const [hover, setHover] = useState<number>(0);
-
+const StarRating: React.FC<StarRatingProps> = ({ totalStars = 5, initialRating }) => {
   return (
     <div>
       {Array.from({ length: totalStars }, (_, index) => {
@@ -17,17 +14,15 @@ const StarRating: React.FC<StarRatingProps> = ({ totalStars = 5, initialRating =
           <span
             key={starValue}
             style={{
-              color: starValue <= (hover || rating) ? '#ffc107' : '#e4e5e9',
+              color: starValue <= initialRating ? '#ffc107' : '#e4e5e9',
               fontSize: '2rem',
             }}
-            //onMouseEnter={() => setHover(starValue)}
-            //onMouseLeave={() => setHover(0)}
           >
             &#9733;
           </span>
         );
       })}
-      <p>Avaliação atual: {rating} estrelas</p>
+      <p>Avaliação: {initialRating} estrelas</p>
     </div>
   );
 };
