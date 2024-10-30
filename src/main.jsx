@@ -6,23 +6,24 @@ import HomePage from "./pages/home";
 import ServicesPage from "./pages/services";
 import AboutUsPage from "./pages/aboutUs";
 import ContactPage from "./pages/contact";
+import { Globals } from "./globals";
 
 export const domain = "/olivaMetal";
 const router = createHashRouter([
   {
-    path: `/`,
+    path: Globals.routes.home,
     element: <HomePage />,
   },
   {
-    path: `/services`,
+    path: Globals.routes.services,
     element: <ServicesPage />,
   },
   {
-    path: `/about-us`,
+    path: Globals.routes.aboutUs,
     element: <AboutUsPage />,
   },
   {
-    path: `/contact`,
+    path: Globals.routes.contact,
     element: <ContactPage />,
   },
 ]);
