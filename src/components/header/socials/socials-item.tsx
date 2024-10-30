@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
 type ISocialsItem = {
-  value: string;
   link: string;
+  value?: string;
   icon?: ReactNode;
   target?: string;
 };

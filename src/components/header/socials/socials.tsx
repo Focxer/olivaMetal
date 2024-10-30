@@ -1,11 +1,6 @@
 import { Instagram, Mail, Phone } from "lucide-react";
 import SocialsItem from "./socials-item";
-import {
-  customerEmail,
-  customerInstagram_label,
-  customerInstagram_link,
-  customerPhone,
-} from "../../../customerVariables";
+import { Globals } from "../../../globals";
 
 const Socials = () => {
   return (
@@ -14,18 +9,18 @@ const Socials = () => {
         {/* Left side */}
         <section className="flex gap-4 justify-start">
           <SocialsItem
-            value={customerEmail}
-            link={`mailto:${customerEmail}`}
+            value={Globals.customer.email}
+            link={`mailto:${Globals.customer.email}`}
             icon={<Mail />}
           />
 
           <SocialsItem
-            link={`https://wa.me/55${customerPhone.replaceAll(
+            link={`https://wa.me/55${Globals.customer.phone.replaceAll(
               /[()-]/g,
               ""
             )}?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.`}
             target="_blank"
-            value={customerPhone}
+            value={Globals.customer.phone}
             icon={<Phone />}
           />
         </section>
@@ -33,10 +28,10 @@ const Socials = () => {
         {/* Right side */}
         <section className="flex gap-4 justify-start sm:justify-end">
           <SocialsItem
-            link={customerInstagram_link}
+            link={Globals.customer.instagramLink}
             target="_blank"
             icon={<Instagram />}
-            value={customerInstagram_label}
+            value={Globals.customer.instagramLabel}
           />
         </section>
       </div>

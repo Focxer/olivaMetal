@@ -1,7 +1,7 @@
 import { Cog, Factory, Handshake, Home, Menu, X } from "lucide-react";
 import NavItem from "./nav-item";
 import Logo from "../logo/logo";
-import { domain } from "../../../main";
+import { Globals } from "../../../globals";
 
 const menuToggle = () => {
   const menu = document.getElementById("navBurger");
@@ -26,14 +26,22 @@ const NavBar = () => {
 
       {/* Navbar desktop */}
       <ul className="hidden lg:flex gap-8">
-        <NavItem value="Início" icon={<Home />} link="/"></NavItem>
-        <NavItem value="Serviços" icon={<Cog />} link="/services"></NavItem>
+        <NavItem value="Início" icon={<Home />} link={Globals.routes.home}></NavItem>
+        <NavItem
+          value="Serviços"
+          icon={<Cog />}
+          link={Globals.routes.services}
+        ></NavItem>
         <NavItem
           value="Sobre nós"
           icon={<Factory />}
-          link="/about-us"
+          link={Globals.routes.aboutUs}
         ></NavItem>
-        <NavItem value="Contato" icon={<Handshake />} link="/contact"></NavItem>
+        <NavItem
+          value="Contato"
+          icon={<Handshake />}
+          link={Globals.routes.contact}
+        ></NavItem>
       </ul>
 
       {/* Navbar mobile */}
@@ -50,17 +58,21 @@ const NavBar = () => {
           </button>
         </div>
         <div className="flex flex-col gap-4">
-          <NavItem value="Início" icon={<Home />} link="/"></NavItem>
-          <NavItem value="Serviços" icon={<Cog />} link="/services"></NavItem>
+          <NavItem value="Início" icon={<Home />} link={Globals.routes.home}></NavItem>
+          <NavItem
+            value="Serviços"
+            icon={<Cog />}
+            link={Globals.routes.services}
+          ></NavItem>
           <NavItem
             value="Sobre nós"
             icon={<Factory />}
-            link="/about-us"
+            link={Globals.routes.aboutUs}
           ></NavItem>
           <NavItem
             value="Contato"
             icon={<Handshake />}
-            link="/contact"
+            link={Globals.routes.contact}
           ></NavItem>
         </div>
       </ul>

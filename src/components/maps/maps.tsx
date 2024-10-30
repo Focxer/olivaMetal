@@ -1,7 +1,7 @@
 import Division from "../division/division";
 import maps from "../../assets/maps/maps.png";
 import ServicesExplain from "../services/services-explain";
-import { customerAddress } from "../../customerVariables";
+import { Globals } from "../../globals";
 
 const Maps = () => {
   return (
@@ -22,7 +22,7 @@ const Maps = () => {
           direction="flex-row-reverse"
           textDirection="text-right"
           title="Onde nos encontrar"
-          text={customerAddress}
+          text={Globals.customer.address}
         ></ServicesExplain>
       </div>
     </div>
