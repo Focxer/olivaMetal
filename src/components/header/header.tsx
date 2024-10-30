@@ -1,4 +1,3 @@
-import New from "../../assets/new.png";
 import Logo from "./logo/logo";
 import Navbar from "./navbar/nav";
 import Socials from "./socials/socials";
@@ -7,7 +6,7 @@ export const Header = () => {
   return (
     <>
       {/* Socials */}
-      <div className="bg-zinc-50 w-screen flex justify-between items-center p-2 sticky top-0">
+      <div className="bg-zinc-50 w-screen flex justify-between items-center p-2">
         <Socials />
       </div>
 
