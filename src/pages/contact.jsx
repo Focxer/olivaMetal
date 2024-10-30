@@ -1,4 +1,5 @@
 import Contact from "../components/contact/contact";
+import Footer from "../components/footer/footer";
 import { Header } from "../components/header/header";
 import Maps from "../components/maps/maps";
 import Observer from "../functions/Observer";
@@ -8,10 +9,11 @@ export const ContactPage = () => {
   Observer();
   resetScroll();
   return (
-    <div className="mb-24">
+    <div className="">
       <Header></Header>
       <Contact></Contact>
       <Maps></Maps>
+      <Footer></Footer>
     </div>
   );
 };

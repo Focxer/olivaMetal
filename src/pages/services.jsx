@@ -1,3 +1,4 @@
+import Footer from "../components/footer/footer";
 import { Header } from "../components/header/header";
 import Services from "../components/services/services";
 import Observer from "../functions/Observer";
@@ -7,9 +8,10 @@ export const ServicesPage = () => {
   Observer();
   resetScroll();
   return (
-    <div className="mb-24">
+    <div className="">
       <Header></Header>
       <Services></Services>
+      <Footer></Footer>
     </div>
   );
 };
