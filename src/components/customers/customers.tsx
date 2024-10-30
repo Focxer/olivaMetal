@@ -11,16 +11,19 @@ function Customers() {
           img={img}
           name="Cliente 1"
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem incidunt magni, cumque blanditiis dignissimos rem id libero autem quos maxime distinctio perferendis nesciunt placeat provident, mollitia et in laboriosam architecto? "
+          initialRating=""
         ></CustomersItem>
         <CustomersItem
           img={img}
           name="Cliente 2"
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem incidunt magni, cumque blanditiis dignissimos rem id libero autem quos maxime distinctio perferendis nesciunt placeat provident, mollitia et in laboriosam architecto?"
+          initialRating=""
         ></CustomersItem>
         <CustomersItem
           img={img}
           name="Cliente 3"
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem incidunt magni, cumque blanditiis dignissimos rem id libero autem quos maxime distinctio perferendis nesciunt placeat provident, mollitia et in laboriosam architecto?"
+          initialRating=""
         ></CustomersItem>
       </div>
     </div>
