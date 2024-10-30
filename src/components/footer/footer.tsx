@@ -3,6 +3,7 @@ import Logo from "../header/logo/logo";
 import SocialsItem from "../header/socials/socials-item";
 import FooterItem from "./footer-item";
 import { Globals } from "../../globals";
+import FooterDev from "./footer-dev";
 
 const Footer = () => {
   return (
@@ -52,6 +53,7 @@ const Footer = () => {
           <span>{Globals.customer.address}</span>
         </div>
         <ul className="flex justify-center flex-col text-zinc-200 gap-2">
+          <h1 className="text-blue-200 mb-4 font-semibold">Conecte-se</h1>
           <FooterItem
             icon={<Instagram></Instagram>}
             text={Globals.customer.instagramLabel}
@@ -71,6 +73,16 @@ const Footer = () => {
             )}?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.`}
           ></FooterItem>
         </ul>
+      </div>
+      <div className="flex justify-center items-center p-2 bg-slate-800 bg-opacity-90 text-zinc-200 text-xs">
+        <span>
+          2024 ©{" "}
+          <FooterDev
+            name="BrunoDev"
+            link="https://focxer.github.io/Portfolio/"
+          ></FooterDev>{" "}
+          & <FooterDev name="Maylon Bento" link=""></FooterDev>
+        </span>
       </div>
     </div>
   );
