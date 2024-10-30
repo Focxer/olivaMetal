@@ -5,6 +5,7 @@ type ICostumersItem = {
   alt?: string;
   name: string;
   description: string;
+  initialRating?:string
 };
 
 const CustomersItem = (props: ICostumersItem) => {
@@ -16,10 +17,8 @@ const CustomersItem = (props: ICostumersItem) => {
         alt={props.alt}
       />
       <h1 className="font-semibold">{props.name}</h1>
-      <span className="text-xs lg:text-sm">{props.description}</span>
-      <div className="self-center">
-        <StarRating></StarRating>
-      </div>
+      <span>{props.description}</span>
+      <StarRating initialRating={2}></StarRating>
     </div>
   );
 };
