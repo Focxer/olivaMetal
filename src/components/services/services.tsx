@@ -37,7 +37,7 @@ const Services = () => {
           sub="Foco total no cliente."
         ></ServicesItem>
       </section>
-      {/* <div className="init-left">
+      <div className="init-left">
         <ServicesExplain
           img={mig}
           shadow="drop-shadow-md"
@@ -64,7 +64,7 @@ const Services = () => {
           title="Torno"
           text="Torneamento de peças cilíndricas para acabamentos finos e alta precisão em diâmetros variados."
         ></ServicesExplain>
-      </div> */}
+      </div>
     </>
   );
 };
