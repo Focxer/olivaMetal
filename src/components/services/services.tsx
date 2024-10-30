@@ -13,7 +13,7 @@ const Services = () => {
     <>
       <Division
         title="Serviços"
-        sub="Técnicas de usinagem para garantir o seu resultado"
+        sub="Técnicas de usinagem"
       ></Division>
       <section className="flex flex-wrap mb-8 gap-4 px-4 w-full">
         <ServicesItem

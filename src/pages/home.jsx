@@ -9,6 +9,7 @@ import Contact from "../components/contact/contact";
 import Customers from "../components/customers/customers";
 import resetScroll from "../functions/resetScroll";
 import Footer from "../components/footer/footer";
+import WhatsApp from "../components/whatsapp/whatsapp";
 
 export const HomePage = () => {
   Observer();
@@ -25,6 +26,7 @@ export const HomePage = () => {
       <Contact></Contact>
       <AboutUs></AboutUs>
       <Footer></Footer>
+      <WhatsApp></WhatsApp>
     </>
   );
 };

@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
 interface StarRatingProps {
-  totalStars?: number;  // Número total de estrelas (default: 5)
-  initialRating: number;  // Avaliação inicial passada como prop (obrigatório)
+  totalStars?: number; // Número total de estrelas (default: 5)
+  initialRating: number; // Avaliação inicial passada como prop (obrigatório)
 }
 
-const StarRating: React.FC<StarRatingProps> = ({ totalStars = 5, initialRating }) => {
+const StarRating: React.FC<StarRatingProps> = ({
+  totalStars = 5,
+  initialRating,
+}) => {
   return (
     <div>
       {Array.from({ length: totalStars }, (_, index) => {
@@ -14,15 +17,14 @@ const StarRating: React.FC<StarRatingProps> = ({ totalStars = 5, initialRating }
           <span
             key={starValue}
             style={{
-              color: starValue <= initialRating ? '#ffc107' : '#e4e5e9',
-              fontSize: '2rem',
+              color: starValue <= initialRating ? "#ffc107" : "#e4e5e9",
+              fontSize: "2rem",
             }}
           >
             &#9733;
           </span>
         );
       })}
-      <p>Avaliação: {initialRating} estrelas</p>
     </div>
   );
 };
