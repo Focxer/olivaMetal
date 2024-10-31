@@ -10,7 +10,6 @@ import Customers from "../components/customers/customers";
 import resetScroll from "../functions/resetScroll";
 import Footer from "../components/footer/footer";
 import WhatsApp from "../components/whatsapp/whatsapp";
-import Gallery from "../components/gallery/gallery";
 
 export const HomePage = () => {
   Observer();
@@ -20,7 +19,6 @@ export const HomePage = () => {
       <Header></Header>
       <Banner></Banner>
       <Services></Services>
-      <Gallery></Gallery>
       <Customers></Customers>
       <div className="mb-8">
         <Maps></Maps>
