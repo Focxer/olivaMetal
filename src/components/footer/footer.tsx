@@ -81,7 +81,7 @@ const Footer = () => {
             name="BrunoDev"
             link="https://focxer.github.io/Portfolio/"
           ></FooterDev>{" "}
-          & <FooterDev name="Maylon Bento" link=""></FooterDev>
+          & <FooterDev name="Maylon Bento" link="https://github.com/MaylonBento"></FooterDev>
         </span>
       </div>
     </div>
