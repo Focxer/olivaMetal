@@ -44,7 +44,7 @@ export const AboutUs = () => {
 
           </div>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 init-left mix-blend-multiply">
             
             <div className="bg-blue-200 rounded-lg shadow-lg p-6 text-center">
               <div className="text-4xl text-blue-500 mb-4">
