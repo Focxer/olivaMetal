@@ -15,6 +15,7 @@ import favicon from "../assets/images/favicon.png";
 import logo from "../assets/images/logo.png";
 import newImg from "../assets/images/new.png";
 import maps from "../assets/images/maps.png";
+import dobra from "../assets/images/dobra.jpg";
 
 export const Globals = {
   routes: {
@@ -24,11 +25,11 @@ export const Globals = {
     contact: "/contact",
   },
   customer: {
-    email: "email@example.com",
+    email: "bruno@olivametal.com.br",
     instagramLabel: "@olivametal",
     instagramLink: "https://www.instagram.com/olivametal",
     phone: "(11)99523-9527",
-    address: "R. Example, 1234 - Diadema - SP \nCEP XXXXX-XXX",
+    address: "R. 28 de setembro, 558 - Diadema - SP \nCEP 09941-500",
   },
   img: {
     img1,
@@ -39,6 +40,7 @@ export const Globals = {
     img6,
     fresa,
     torno,
+    dobra,
     mig,
     whatsapp,
     customer1,

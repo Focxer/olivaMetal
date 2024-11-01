@@ -3,7 +3,7 @@ import { Globals } from "../../globals";
 const WhatsApp = () => {
   return (
     <a
-      className="init-right fixed right-4 md:right-8 lg:right-8 xl:18 bottom-24"
+      className="init-right fixed right-4 md:right-8 lg:right-8 xl:18 bottom-24 z-50"
       target="_blank"
       href={`https://wa.me/55${Globals.customer.phone.replaceAll(
         /[()-]/g,

@@ -59,6 +59,16 @@ const Services = () => {
           title="Torno"
           text="Torneamento de peças cilíndricas para acabamentos finos e alta precisão em diâmetros variados."
         ></ServicesExplain>
+        <div className="init-right">
+        <ServicesExplain
+          img={Globals.img.dobra}
+          shadow="drop-shadow-md"
+          direction="flex-row-reverse"
+          title="Dobra de tubo"
+          text="Dobra de tubo processo de conformação utilizado para conformar tubos pelo curvamento."
+          textDirection="text-right"
+        ></ServicesExplain>
+      </div>
       </div>
     </>
   );
