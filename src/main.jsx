@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import HomePage from "./pages/home";
 import ServicesPage from "./pages/services";
@@ -9,7 +9,7 @@ import ContactPage from "./pages/contact";
 import { Globals } from "./globals";
 
 export const domain = "/olivaMetal";
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: Globals.routes.home,
     element: <HomePage />,
