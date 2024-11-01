@@ -64,7 +64,7 @@ const Services = () => {
           img={Globals.img.dobra}
           shadow="drop-shadow-md"
           direction="flex-row-reverse"
-          title="Dobra de tubo"
+          title="Dobra"
           text="Dobra de tubo processo de conformação utilizado para conformar tubos pelo curvamento."
           textDirection="text-right"
         ></ServicesExplain>
