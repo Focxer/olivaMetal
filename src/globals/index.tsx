@@ -29,7 +29,7 @@ export const Globals = {
     instagramLabel: "@olivametal",
     instagramLink: "https://www.instagram.com/olivametal",
     phone: "(11)99523-9527",
-    address: "R. 28 de setembro, 558, galpão 2 - Diadema - SP \nCEP 09941-500",
+    address: "R. 28 de setembro, 558, galpão 2 \nDiadema - SP - CEP 09941-500",
   },
   img: {
     img1,

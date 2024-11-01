@@ -4,7 +4,7 @@ import CustomersItem from "./customers-item";
 
 function Customers() {
   return (
-    <div className="w-screen p-12">
+    <div className="w-screen">
       <Division title="Avaliações" sub="Nossos clientes"></Division>
       <div className="flex flex-col md:flex-row justify-center items-center gap-2 lg:gap-8 px-4">
         <CustomersItem

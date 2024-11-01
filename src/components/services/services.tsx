@@ -65,7 +65,7 @@ const Services = () => {
           shadow="drop-shadow-md"
           direction="flex-row-reverse"
           title="Dobra"
-          text="Dobra de tubo processo de conformação utilizado para conformar tubos pelo curvamento."
+          text="Dobra de tubos e chapas CNC, qualidade garantida e acabamento perfeito."
           textDirection="text-right"
         ></ServicesExplain>
       </div>
