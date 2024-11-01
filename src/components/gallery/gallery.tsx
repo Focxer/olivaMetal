@@ -6,10 +6,10 @@ const Gallery = () => {
   return (
     <>
       <Division title="Produtos" sub="Processos de qualidade"></Division>
-      <section className="w-full px-4 flex justify-center items-center gap-4 flex-wrap mb-32">
+      <section className="w-full h-full px-4 flex justify-center items-center gap-4 flex-wrap">
         <GalleryItem
           img={Globals.img.img1}
-          name="Estoque de cilindro pequeno duplo"
+          name="Estoque de produtos"
           description="
 Carrinhos de mão projetados para transportar cilindros de gás com segurança e eficiência. Com estrutura reforçada, suportes para fixação e rodas resistentes, eles facilitam o transporte e garantem estabilidade, reduzindo o esforço e o risco de acidentes durante o manuseio de cilindros pesados."
         ></GalleryItem>

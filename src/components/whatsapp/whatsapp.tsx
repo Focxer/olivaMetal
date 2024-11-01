@@ -11,7 +11,7 @@ const WhatsApp = () => {
       )}?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.`}
     >
       <div className="relative group">
-        <span className="absolute bg-slate-700 text-white py-2 px-4 rounded left-[-80px] bottom-16 opacity-0 group-hover:opacity-80 transition-all duration-200 whitespace-normal text-sm">
+        <span className="absolute bg-slate-700 text-white py-2 px-4 rounded left-[-80px] bottom-16 opacity-0 group-hover:opacity-80 transition-all duration-200 whitespace-normal text-sm hidden md:block">
           Iniciar conversa...
         </span>
         <img
