@@ -10,9 +10,9 @@ export const Header = () => {
         <Socials />
       </div>
 
-      <div className="bg-zinc-100 w-full flex justify-between py-2 px-8 lg:justify-around items-center sticky top-0 z-50">
+      <div className="bg-slate-700 w-full flex justify-between py-2 px-8 lg:justify-around items-center sticky top-0 z-50">
         {/* Left content */}
-        <Logo color="text-zinc-600"></Logo>
+        <Logo color="text-zinc-200"></Logo>
 
         {/* Navbar */}
         <Navbar />

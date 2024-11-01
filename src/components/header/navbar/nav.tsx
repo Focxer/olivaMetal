@@ -19,7 +19,7 @@ const NavBar = () => {
     <>
       {/* Switch */}
       <nav className="lg:hidden">
-        <div className="text-zinc-800 font-bold hover:cursor-pointer">
+        <div className="text-zinc-200 font-bold hover:cursor-pointer">
           <Menu onClick={menuToggle} />
         </div>
       </nav>

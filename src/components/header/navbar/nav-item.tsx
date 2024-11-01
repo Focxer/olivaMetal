@@ -11,7 +11,7 @@ type INavItem = {
 const NavItem = (props: INavItem) => {
   return (
     <>
-      <li className="text-zinc-200 lg:text-zinc-600 flex items-center justify-center border-t-2 lg:border-0 border-zinc-400">
+      <li className="text-zinc-200 flex items-center justify-center border-t-2 lg:border-0 border-zinc-400">
         <HashLink
           to={`${props.link}`}
           target={props.target}
