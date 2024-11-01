@@ -34,7 +34,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="bg-slate-800 bg-opacity-80 w-full px-8 py-24 md:py-36 flex flex-col md:flex-row md:items-center gap-12 justify-around">
+      <div className="bg-slate-800 bg-opacity-80 w-full px-8 py-24 md:py-36 flex flex-col md:flex-row md:items-start gap-12 justify-around text-xs lg:text-base">
         <ul className="flex justify-center flex-col">
           <h1 className="text-blue-200 mb-4 font-semibold">Navegação</h1>
           <FooterItem text="Inicio" link={Globals.routes.home}></FooterItem>
@@ -48,24 +48,20 @@ const Footer = () => {
           ></FooterItem>
           <FooterItem text="Contato" link={Globals.routes.contact}></FooterItem>
         </ul>
-        <div className="flex flex-col gap-4 text-center text-zinc-200 order-last md:order-none">
-          <Logo color="text-zinc-200 text-left"></Logo>
-          <span>{Globals.customer.address}</span>
-        </div>
         <ul className="flex justify-center flex-col text-zinc-200 gap-2">
           <h1 className="text-blue-200 mb-4 font-semibold">Conecte-se</h1>
           <FooterItem
-            icon={<Instagram></Instagram>}
+            icon={<Instagram className="h-5 lg:h-auto"></Instagram>}
             text={Globals.customer.instagramLabel}
             link={Globals.customer.instagramLink}
           ></FooterItem>
           <FooterItem
-            icon={<Mail></Mail>}
+            icon={<Mail className="h-5 lg:h-auto"></Mail>}
             text={Globals.customer.email}
             link={`mailto:${Globals.customer.email}`}
           ></FooterItem>
           <FooterItem
-            icon={<Phone></Phone>}
+            icon={<Phone className="h-5 lg:h-auto"></Phone>}
             text={Globals.customer.phone}
             link={`https://wa.me/55${Globals.customer.phone.replaceAll(
               /[()-]/g,
@@ -73,6 +69,10 @@ const Footer = () => {
             )}?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.`}
           ></FooterItem>
         </ul>
+        <div className="flex flex-col gap-4 text-center text-zinc-200 order-last md:order-none">
+          <Logo color="text-zinc-200"></Logo>
+          <span>{Globals.customer.address}</span>
+        </div>
       </div>
       <div className="flex justify-center items-center p-2 bg-slate-800 bg-opacity-90 text-zinc-200 text-xs">
         <span>
@@ -81,7 +81,11 @@ const Footer = () => {
             name="BrunoDev"
             link="https://focxer.github.io/Portfolio/"
           ></FooterDev>{" "}
-          & <FooterDev name="Maylon Bento" link="https://github.com/MaylonBento"></FooterDev>
+          &{" "}
+          <FooterDev
+            name="Maylon Bento"
+            link="https://github.com/MaylonBento"
+          ></FooterDev>
         </span>
       </div>
     </div>

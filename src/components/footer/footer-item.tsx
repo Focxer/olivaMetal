@@ -12,7 +12,7 @@ const FooterItem = (props: IFooterItem) => {
   return (
     <li className="mb-2">
       <HashLink
-        className="flex gap-2"
+        className="flex gap-1 sm:gap-2"
         to={props.link ?? ""}
         target={props.target ?? "_self"}
       >

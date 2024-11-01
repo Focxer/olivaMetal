@@ -17,7 +17,7 @@ const WhatsApp = () => {
         <img
           src={Globals.img.whatsapp}
           alt="whatsappIcon"
-          className="rounded-full max-h-12 max-w-12 aspect-square drop-shadow-lg hover:scale-105 duration-200 transition-all cursor-pointer"
+          className="rounded-full h-12 w-12 aspect-square drop-shadow-lg hover:scale-105 duration-200 transition-all cursor-pointer"
         />
       </div>
     </a>
