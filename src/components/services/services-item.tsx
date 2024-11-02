@@ -1,4 +1,4 @@
-import { ChevronUp, Locate, LocateIcon } from "lucide-react";
+import { ChevronUp } from "lucide-react";
 
 type IServicesItem = {
   img: string;
@@ -24,7 +24,7 @@ const ServicesItem = (props: IServicesItem) => {
       >
         <ChevronUp className="text-zinc-50"></ChevronUp>
         <div className="flex gap-2 items-center justify-center mb-2 py-2">
-          <h1 className="text-zinc-200 font-semibold text-sm lg:text-2xl">
+          <h1 className="text-zinc-200 font-semibold text-xs md:text-2xl">
             {props.title}
           </h1>
         </div>
