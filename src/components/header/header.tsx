@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <>
       {/* Socials */}
-      <div className="bg-zinc-50 w-screen flex justify-between items-center p-2">
+      <div className="bg-zinc-50 w-full flex justify-between items-center p-2">
         <Socials />
       </div>
 

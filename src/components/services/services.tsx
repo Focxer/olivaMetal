@@ -6,10 +6,7 @@ import { Globals } from "../../globals";
 const Services = () => {
   return (
     <>
-      <Division
-        title="Serviços"
-        sub="Técnicas de usinagem"
-      ></Division>
+      <Division title="Serviços" sub="Técnicas de usinagem"></Division>
       <section className="flex flex-wrap mb-8 gap-4 px-4 w-full">
         <ServicesItem
           img={Globals.img.img3}
@@ -32,43 +29,45 @@ const Services = () => {
           sub="Foco total no cliente."
         ></ServicesItem>
       </section>
-      <div className="init-left">
-        <ServicesExplain
-          img={Globals.img.mig}
-          shadow="drop-shadow-md"
-          direction=""
-          title="Solda MIG"
-          text="Serviço de soldagem de alta precisão para unir metais com resistência e acabamento de qualidade."
-        ></ServicesExplain>
-      </div>
-      <div className="init-right">
-        <ServicesExplain
-          img={Globals.img.fresa}
-          shadow="drop-shadow-md"
-          direction="flex-row-reverse"
-          title="Fresa"
-          text="Usinagem de peças com detalhes complexos e precisão milimétrica, garantindo encaixes perfeitos."
-          textDirection="text-right"
-        ></ServicesExplain>
-      </div>
-      <div className="init-left">
-        <ServicesExplain
-          img={Globals.img.torno}
-          shadow="drop-shadow-md"
-          direction=""
-          title="Torno"
-          text="Torneamento de peças cilíndricas para acabamentos finos e alta precisão em diâmetros variados."
-        ></ServicesExplain>
+      <div className="bg-zinc-50 py-6 md:py-12">
+        <div className="init-left">
+          <ServicesExplain
+            img={Globals.img.mig}
+            shadow="drop-shadow-md"
+            direction=""
+            title="Solda MIG"
+            text="Serviço de soldagem de alta precisão para unir metais com resistência e acabamento de qualidade."
+          ></ServicesExplain>
+        </div>
         <div className="init-right">
-        <ServicesExplain
-          img={Globals.img.dobra}
-          shadow="drop-shadow-md"
-          direction="flex-row-reverse"
-          title="Dobra"
-          text="Dobra de tubos e chapas CNC, qualidade garantida e acabamento perfeito."
-          textDirection="text-right"
-        ></ServicesExplain>
-      </div>
+          <ServicesExplain
+            img={Globals.img.fresa}
+            shadow="drop-shadow-md"
+            direction="flex-row-reverse"
+            title="Fresa"
+            text="Usinagem de peças com detalhes complexos e precisão milimétrica, garantindo encaixes perfeitos."
+            textDirection="text-right"
+          ></ServicesExplain>
+        </div>
+        <div className="init-left">
+          <ServicesExplain
+            img={Globals.img.torno}
+            shadow="drop-shadow-md"
+            direction=""
+            title="Torno"
+            text="Torneamento de peças cilíndricas para acabamentos finos e alta precisão em diâmetros variados."
+          ></ServicesExplain>
+          <div className="init-right">
+            <ServicesExplain
+              img={Globals.img.dobra}
+              shadow="drop-shadow-md"
+              direction="flex-row-reverse"
+              title="Dobra"
+              text="Dobra de tubos e chapas CNC, qualidade garantida e acabamento perfeito."
+              textDirection="text-right"
+            ></ServicesExplain>
+          </div>
+        </div>
       </div>
     </>
   );

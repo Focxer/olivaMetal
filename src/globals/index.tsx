@@ -29,7 +29,9 @@ export const Globals = {
     instagramLabel: "@olivametal",
     instagramLink: "https://www.instagram.com/olivametal",
     phone: "(11)99523-9527",
-    address: "R. 28 de setembro, 558, galpão 2 - \nDiadema - SP - CEP 09941-500",
+    address:
+      "R. 28 de setembro, 558, galpão 2 - \nDiadema - SP - CEP 09941-500",
+    maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.855396648235!2d-46.60777711801722!3d-23.681128687370855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448e29fa7d3b%3A0xb9159fba07dcbe08!2sR.%20Vinte%20e%20Oito%20de%20Setembro%2C%20558%20-%20Canhema%2C%20Diadema%20-%20SP%2C%2009941-500!5e0!3m2!1spt-BR!2sbr!4v1730502876917!5m2!1spt-BR!2sbr",
   },
   img: {
     img1,
