@@ -8,7 +8,6 @@ import AboutUsPage from "./pages/aboutUs";
 import ContactPage from "./pages/contact";
 import { Globals } from "./globals";
 
-export const domain = "/olivaMetal";
 const router = createBrowserRouter([
   {
     path: Globals.routes.home,
