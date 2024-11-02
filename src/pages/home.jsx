@@ -20,7 +20,7 @@ export const HomePage = () => {
       <Banner></Banner>
       <Services></Services>
       <Customers></Customers>
-      <div className="mb-8">
+      <div className="mb-8 w-full">
         <Maps></Maps>
       </div>
       <Contact></Contact>

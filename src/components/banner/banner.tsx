@@ -9,7 +9,7 @@ const Banner = (props: IBanner) => {
   return (
     <>
       <section className="w-full flex items-center justify-center overflow-hidden">
-        <div className="flex flex-col md:flex-row items-center justify-center w-screen gap-4 bg-gradient-to-r from-zinc-100 to-blue-200 py-24 lg:py-44">
+        <div className="flex flex-col md:flex-row items-center justify-center w-full gap-4 bg-gradient-to-r from-zinc-100 to-blue-200 py-24 lg:py-44">
           <img
             className="drop-shadow-2xl h-20 md:h-32 lg:h-52"
             src={Globals.img.logo}

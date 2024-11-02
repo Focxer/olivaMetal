@@ -20,12 +20,12 @@ const AboutUs: React.FC = () => {
     <>
     <Division title="Oliva Metal" sub="Conheça um pouco mais sobre nós"></Division>
     <section className="bg-zinc-50 w-full">
-      <div className="max-w-3xl mx-auto text-center p-12 ">
+      <div className="w-full text-center p-4 flex items-center justify-center flex-col">
         {/* Título */}
-        <h1 className="text-2xl font-bold text-zinc-600 mb-8">Sobre Nós</h1>
+        <h1 className="text-2xl font-bold text-zinc-600 mb-8 ">Sobre Nós</h1>
         
         {/* Introdução */}
-        <p className="text-sm md:text-base text-gray-600 mb-6">
+        <p className="w-full md:w-1/2 text-sm md:text-base text-gray-600 mb-6">
           Somos uma empresa dedicada a fornecer as melhores soluções para nossos clientes. Desde nossa fundação, buscamos inovação e excelência em tudo o que fazemos. Nossa equipe é apaixonada por entregar resultados que superem as expectativas, e estamos sempre prontos para abraçar novos desafios.
         </p>
         
@@ -35,7 +35,7 @@ const AboutUs: React.FC = () => {
         </div>
         
         {/* Texto adicional */}
-        <p className="text-sm md:text-base text-gray-600 mb-10">
+        <p className="w-full md:w-1/2 text-sm md:text-base text-gray-600 mb-10">
           Com uma equipe altamente qualificada e apaixonada pelo que faz, trabalhamos diariamente para criar soluções que transformam vidas e impulsionam negócios. Nosso compromisso é sempre superar as expectativas dos nossos clientes, trazendo inovação e tecnologia para o mercado.
         </p>
         

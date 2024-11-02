@@ -30,7 +30,7 @@ const Services = () => {
         ></ServicesItem>
       </section>
       <div className="bg-zinc-50 py-6 md:py-12">
-        <div className="init-left">
+        <div className="init-left flex flex-col">
           <ServicesExplain
             img={Globals.img.mig}
             shadow="drop-shadow-md"
@@ -57,16 +57,16 @@ const Services = () => {
             title="Torno"
             text="Torneamento de peças cilíndricas para acabamentos finos e alta precisão em diâmetros variados."
           ></ServicesExplain>
-          <div className="init-right">
-            <ServicesExplain
-              img={Globals.img.dobra}
-              shadow="drop-shadow-md"
-              direction="flex-row-reverse"
-              title="Dobra"
-              text="Dobra de tubos e chapas CNC, qualidade garantida e acabamento perfeito."
-              textDirection="text-right"
-            ></ServicesExplain>
-          </div>
+        </div>
+        <div className="init-right">
+          <ServicesExplain
+            img={Globals.img.dobra}
+            shadow="drop-shadow-md"
+            direction="flex-row-reverse"
+            title="Dobra"
+            text="Dobra de tubos e chapas CNC, qualidade garantida e acabamento perfeito."
+            textDirection="text-right"
+          ></ServicesExplain>
         </div>
       </div>
     </>

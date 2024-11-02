@@ -4,7 +4,7 @@ import ContactInput from "./contact-input";
 import { Globals } from "../../globals";
 const Contact = () => {
   return (
-    <section className="w-screen flex flex-col md:flex-row justify-center items-center gap-8 bg-zinc-50">
+    <section className="w-full flex flex-col md:flex-row justify-center items-center gap-8 bg-zinc-50">
       <div className="py-16 px-8 md:px-2 flex-grow">
         <h1 className="text-2xl mb-4 text-center md:text-right font-semibold text-zinc-600">
           Fale conosco!

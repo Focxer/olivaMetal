@@ -10,7 +10,7 @@ type IServicesExplain = {
 
 const ServicesExplain = (props: IServicesExplain) => {
   return (
-    <section className="w-screen flex items-center justify-center px-2">
+    <section className="flex items-center justify-center px-2">
       <div
         className={`w-full lg:w-2/3 flex ${props.direction} gap-4 md:gap-8 justify-center items-center`}
       >

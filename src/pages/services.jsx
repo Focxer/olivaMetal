@@ -15,7 +15,7 @@ export const ServicesPage = () => {
       <Header></Header>
       <Gallery></Gallery>
       <Services></Services>
-      <div className="mt-12 -mb-24">
+      <div className="mt-12 -mb-24 w-full">
         <Contact></Contact>
       </div>
       <Footer></Footer>

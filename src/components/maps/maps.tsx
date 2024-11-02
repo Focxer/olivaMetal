@@ -4,15 +4,14 @@ import { Globals } from "../../globals";
 
 const Maps = () => {
   return (
-    <div className="w-screen">
+    <>
       <Division
         title="Onde estamos"
         sub="Venha conhecer mais de perto"
       ></Division>
       <iframe
         src={Globals.customer.maps}
-        loading="lazy"
-        className="h-[300px] lg:h-[400px] w-screen mb-8"
+        className="h-[300px] lg:h-[400px] mb-8 w-full"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
       <div className="init-right mix-blend-multiply">
@@ -24,7 +23,7 @@ const Maps = () => {
           text={Globals.customer.address}
         ></ServicesExplain>
       </div>
-    </div>
+    </>
   );
 };
 
